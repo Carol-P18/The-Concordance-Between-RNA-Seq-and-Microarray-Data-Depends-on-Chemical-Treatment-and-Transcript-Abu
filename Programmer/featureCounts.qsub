@@ -1,0 +1,24 @@
+#!/bin/bash
+
+#$ -P bf528
+#$ -cwd
+#$ -pe omp 16
+
+source /etc/bashrc
+
+module load subread
+
+GTF=/project/bf528/project_3/reference/rn4_refGene_20180308.gtf
+
+for file in /project/bf528/project_3/samples/*.bam
+
+
+ do
+  f=$(basename "$file")
+  f=${f:0:10} 
+  echo $f
+  OUT=/projectnb2/bf528/users/group_8/project_3/Programmer/$f.txt
+  featureCounts -T 16 -a $GTF -o $OUT $file
+  
+  
+ done;
