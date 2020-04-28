@@ -1,4 +1,4 @@
-# The-Concordance-Between-RNA-Seq-and-Microarray-Data-Depends-on-Chemical-Treatment-and-Transcript-Abu
+# The-Concordance-Between-RNA-Seq-and-Microarray-Data-Depends-on-Chemical-Treatment-and-Transcript-Abundance
 Reproducing The Concordance Between RNA-Seq and Microarray Data Depends on Chemical Treatment and Transcript Abundance study by Wang et. al
 
 Both RNA-seq and microarray are two known methods that are used to study
